@@ -5,8 +5,10 @@ const geohash = require('ngeohash');     // Geohashを生成するためのラ�
 
 exports.handler = async (event) => {
     try {
-        // リクエストのパラメータをパース
-        const body = JSON.parse(event.body);
+        // URLデコード
+        const decodedBody = decodeURIComponent(event.body);
+        // デコードしたボディをパース
+        const body = JSON.parse(decodedBody);
         const { userid, content, comments, latitude, longitude, genre } = body;
 
         // 必須パラメータのバリデーション

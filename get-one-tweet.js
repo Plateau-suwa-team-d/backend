@@ -3,8 +3,9 @@ const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
 exports.handler = async (event) => {
     try {
-        // リクエストのパラメータから uid を取得
-        const { uid } = JSON.parse(event.body);
+        // URLデコードを行い、リクエストパラメータから uid を取得
+        const decodedBody = decodeURIComponent(event.body);
+        const { uid } = JSON.parse(decodedBody);
 
         // 必須パラメータのバリデーション
         if (!uid) {
@@ -45,7 +46,7 @@ exports.handler = async (event) => {
         // エラーレスポンス
         return {
             statusCode: 500,
-            body: JSON.stringify({ message: 'Error fetching tweet', error }),
+            body: JSON.stringify({ message: 'Error fetching tweet', error: error.message }),
         };
     }
 };

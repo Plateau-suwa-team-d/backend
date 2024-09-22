@@ -1,12 +1,12 @@
 const AWS = require('aws-sdk');
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
-const geohash = require('ngeohash');  // Geohashライブラリ
 const haversine = require('haversine-distance');  // 距離計算ライブラリ
 
 exports.handler = async (event) => {
     try {
-        // リクエストパラメータから緯度経度を取得
-        const { latitude, longitude } = JSON.parse(event.body);
+        // URLデコードを行い、リクエストパラメータから緯度経度を取得
+        const decodedBody = decodeURIComponent(event.body);
+        const { latitude, longitude } = JSON.parse(decodedBody);
         
         // DynamoDBのTweetテーブルから全てのデータを取得
         const params = {
@@ -43,7 +43,7 @@ exports.handler = async (event) => {
         // エラーレスポンス
         return {
             statusCode: 500,
-            body: JSON.stringify({ message: 'Error fetching tweets', error }),
+            body: JSON.stringify({ message: 'Error fetching tweets', error: error.message }),
         };
     }
 };
