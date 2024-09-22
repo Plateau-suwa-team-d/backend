@@ -1,0 +1,1271 @@
+---
+Metadata:
+  TemplateId: "arn:aws:cloudformation:ap-northeast-1:590183837479:generatedTemplate/305521b2-9934-4453-9417-af279984c2e7"
+Parameters:
+  LambdaFunction00posttweet00NeCuICodeS3ObjectVersionJbkn0:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunction00testaccessdynamoDB00wVgQ0CodeZipFilepX8PU:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  For JSON, you must escape quotes and special characters such as newline (``\\\
+      n``) with a backslash.\n If you specify a function that interacts with an AWS\
+      \ CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunction00getrangetweets001pnWGCodeZipFileo0ZVd:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  For JSON, you must escape quotes and special characters such as newline (``\\\
+      n``) with a backslash.\n If you specify a function that interacts with an AWS\
+      \ CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunction00getonetweet00FD9pdCodeSourceKMSKeyArnLSLhd:
+    NoEcho: "true"
+    Type: "String"
+    Description: "Value of write only property Code/SourceKMSKeyArn of resource LambdaFunction00getonetweet00FD9pd."
+  LambdaFunction00testaccessdynamoDB00wVgQ0CodeS3BucketS7Pum:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunction00testaccessdynamoDB00wVgQ0CodeSourceKMSKeyArnn2uEz:
+    NoEcho: "true"
+    Type: "String"
+    Description: "Value of write only property Code/SourceKMSKeyArn of resource LambdaFunction00testaccessdynamoDB00wVgQ0."
+  LambdaFunction00gethistory00mxLfyCodeS3KeySTABk:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunction00posttweet00NeCuICodeS3Bucketekd8Z:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunction00getonetweet00FD9pdCodeS3ObjectVersionvhwLY:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunction00posttweet00NeCuICodeImageUri4TWkm:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunction00getonetweet00FD9pdCodeZipFileN9aqr:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  For JSON, you must escape quotes and special characters such as newline (``\\\
+      n``) with a backslash.\n If you specify a function that interacts with an AWS\
+      \ CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunction00posttweet00NeCuICodeS3KeyR1PAy:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunction00gethistory00mxLfyCodeS3BucketZCDYc:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunction00gethistory00mxLfyCodeImageUri7f7b2:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunction00getrangetweets001pnWGCodeS3BucketAqBLW:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunction00posttweet00NeCuICodeSourceKMSKeyArnwKZMt:
+    NoEcho: "true"
+    Type: "String"
+    Description: "Value of write only property Code/SourceKMSKeyArn of resource LambdaFunction00posttweet00NeCuI."
+  LambdaFunction00testaccessdynamoDB00wVgQ0CodeS3ObjectVersionLsTjn:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunction00gethistory00mxLfyCodeSourceKMSKeyArngsywl:
+    NoEcho: "true"
+    Type: "String"
+    Description: "Value of write only property Code/SourceKMSKeyArn of resource LambdaFunction00gethistory00mxLfy."
+  LambdaFunction00getrangetweets001pnWGCodeImageUriNbTTq:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunction00gethistory00mxLfyCodeZipFilerokt1:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  For JSON, you must escape quotes and special characters such as newline (``\\\
+      n``) with a backslash.\n If you specify a function that interacts with an AWS\
+      \ CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunction00getonetweet00FD9pdCodeS3BucketXdHr4:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunction00testaccessdynamoDB00wVgQ0CodeImageUri74cHV:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunction00getonetweet00FD9pdCodeImageUrinl1NE:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunction00getrangetweets001pnWGCodeS3ObjectVersion4krxs:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunction00getonetweet00FD9pdCodeS3KeyByc3w:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunction00getrangetweets001pnWGCodeS3KeyuaOnZ:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunction00getrangetweets001pnWGCodeSourceKMSKeyArnhsjSI:
+    NoEcho: "true"
+    Type: "String"
+    Description: "Value of write only property Code/SourceKMSKeyArn of resource LambdaFunction00getrangetweets001pnWG."
+  LambdaFunction00gethistory00mxLfyCodeS3ObjectVersionUwo9U:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunction00posttweet00NeCuICodeZipFile3GUPZ:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  For JSON, you must escape quotes and special characters such as newline (``\\\
+      n``) with a backslash.\n If you specify a function that interacts with an AWS\
+      \ CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunction00testaccessdynamoDB00wVgQ0CodeS3KeyzQKIj:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+Resources:
+  CloudWatchAlarm00TargetTrackingtableTweetProvisionedCapacityLowe46110e72cdc4878bf849f096ed7e9df007coqS:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "LessThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00Tweet00curzk"
+        Name: "TableName"
+      Period: 300
+      EvaluationPeriods: 3
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:c6c1f5c9-6670-4e71-9c42-f116193975ed:resource/dynamodb/table/Tweet:policyName/$Tweet-scaling-policy:createdBy/d85f2d29-0c2c-441c-8917-26ec1960e118"
+      MetricName: "ProvisionedWriteCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:c6c1f5c9-6670-4e71-9c42-f116193975ed:resource/dynamodb/table/Tweet:policyName/$Tweet-scaling-policy:createdBy/d85f2d29-0c2c-441c-8917-26ec1960e118."
+      AlarmName: "TargetTracking-table/Tweet-ProvisionedCapacityLow-e46110e7-2cdc-4878-bf84-9f096ed7e9df"
+      Statistic: "Average"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 1
+  LambdaPermission00functiontestaccessdynamoDB00qYcpa:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunction00testaccessdynamoDB00wVgQ0"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:ap-northeast-1:590183837479:2jcwshocug/*/GET/test"
+      Principal: "apigateway.amazonaws.com"
+  LambdaFunction00testaccessdynamoDB00wVgQ0:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "lambda_function.lambda_handler"
+      Code:
+        SourceKMSKeyArn:
+          Ref: "LambdaFunction00testaccessdynamoDB00wVgQ0CodeSourceKMSKeyArnn2uEz"
+        S3ObjectVersion:
+          Ref: "LambdaFunction00testaccessdynamoDB00wVgQ0CodeS3ObjectVersionLsTjn"
+        S3Bucket:
+          Ref: "LambdaFunction00testaccessdynamoDB00wVgQ0CodeS3BucketS7Pum"
+        ZipFile:
+          Ref: "LambdaFunction00testaccessdynamoDB00wVgQ0CodeZipFilepX8PU"
+        ImageUri:
+          Ref: "LambdaFunction00testaccessdynamoDB00wVgQ0CodeImageUri74cHV"
+        S3Key:
+          Ref: "LambdaFunction00testaccessdynamoDB00wVgQ0CodeS3KeyzQKIj"
+      Role:
+        Fn::GetAtt:
+        - "IAMRole00PlateauLambdaRole00LjV4E"
+        - "Arn"
+      FileSystemConfigs: []
+      FunctionName: "test_access_dynamoDB"
+      Runtime: "python3.12"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/test_access_dynamoDB"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Architectures:
+      - "x86_64"
+  LambdaPermission00functionposttweet00qaaE6:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunction00posttweet00NeCuI"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:ap-northeast-1:590183837479:2jcwshocug/*/POST/post-tweet"
+      Principal: "apigateway.amazonaws.com"
+  ApiGatewayDeployment004yvox500YoAjq:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi002jcwshocug00R8nKn"
+  ApiGatewayDeployment00syepn500arQMa:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi002jcwshocug00R8nKn"
+  CloudWatchAlarm00TargetTrackingtableTweetAlarmHigh3a1f841e78ec495fbe10e8fd60f1d06600PfhvU:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "GreaterThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00Tweet00curzk"
+        Name: "TableName"
+      Period: 60
+      EvaluationPeriods: 2
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:c6c1f5c9-6670-4e71-9c42-f116193975ed:resource/dynamodb/table/Tweet:policyName/$Tweet-scaling-policy:createdBy/d85f2d29-0c2c-441c-8917-26ec1960e118"
+      MetricName: "ConsumedWriteCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:c6c1f5c9-6670-4e71-9c42-f116193975ed:resource/dynamodb/table/Tweet:policyName/$Tweet-scaling-policy:createdBy/d85f2d29-0c2c-441c-8917-26ec1960e118."
+      AlarmName: "TargetTracking-table/Tweet-AlarmHigh-3a1f841e-78ec-495f-be10-e8fd60f1d066"
+      Statistic: "Sum"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 42
+  LambdaPermission00functionposttweet00RqgvI:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunction00posttweet00NeCuI"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:ap-northeast-1:590183837479:2jcwshocug/*/POST/"
+      Principal: "apigateway.amazonaws.com"
+  LambdaFunction00getrangetweets001pnWG:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "index.handler"
+      Code:
+        SourceKMSKeyArn:
+          Ref: "LambdaFunction00getrangetweets001pnWGCodeSourceKMSKeyArnhsjSI"
+        S3ObjectVersion:
+          Ref: "LambdaFunction00getrangetweets001pnWGCodeS3ObjectVersion4krxs"
+        S3Bucket:
+          Ref: "LambdaFunction00getrangetweets001pnWGCodeS3BucketAqBLW"
+        ZipFile:
+          Ref: "LambdaFunction00getrangetweets001pnWGCodeZipFileo0ZVd"
+        ImageUri:
+          Ref: "LambdaFunction00getrangetweets001pnWGCodeImageUriNbTTq"
+        S3Key:
+          Ref: "LambdaFunction00getrangetweets001pnWGCodeS3KeyuaOnZ"
+      Role:
+        Fn::GetAtt:
+        - "IAMRole00PlateauLambdaRole00LjV4E"
+        - "Arn"
+      FileSystemConfigs: []
+      FunctionName: "get-range-tweets"
+      Runtime: "nodejs20.x"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/get-range-tweets"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Layers:
+      - "arn:aws:lambda:ap-northeast-1:590183837479:layer:aws-sdk:6"
+      Architectures:
+      - "x86_64"
+  ApiGatewayDeployment001lz1u7003BNpY:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi002jcwshocug00R8nKn"
+  ApiGatewayDeployment00u22gx300G5atZ:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi002jcwshocug00R8nKn"
+  LambdaFunction00getonetweet00FD9pd:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "index.handler"
+      Code:
+        SourceKMSKeyArn:
+          Ref: "LambdaFunction00getonetweet00FD9pdCodeSourceKMSKeyArnLSLhd"
+        S3ObjectVersion:
+          Ref: "LambdaFunction00getonetweet00FD9pdCodeS3ObjectVersionvhwLY"
+        S3Bucket:
+          Ref: "LambdaFunction00getonetweet00FD9pdCodeS3BucketXdHr4"
+        ZipFile:
+          Ref: "LambdaFunction00getonetweet00FD9pdCodeZipFileN9aqr"
+        ImageUri:
+          Ref: "LambdaFunction00getonetweet00FD9pdCodeImageUrinl1NE"
+        S3Key:
+          Ref: "LambdaFunction00getonetweet00FD9pdCodeS3KeyByc3w"
+      Role:
+        Fn::GetAtt:
+        - "IAMRole00PlateauLambdaRole00LjV4E"
+        - "Arn"
+      FileSystemConfigs: []
+      FunctionName: "get-one-tweet"
+      Runtime: "nodejs20.x"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/get-one-tweet"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Layers:
+      - "arn:aws:lambda:ap-northeast-1:590183837479:layer:aws-sdk:6"
+      Architectures:
+      - "x86_64"
+  ApiGatewayDeployment00qu4br700AXxp6:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi002jcwshocug00R8nKn"
+  IAMRole00gethistorydynamodbpolicy00H59tJ:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::590183837479:policy/Plateau_dynamodb_policy"
+      MaxSessionDuration: 3600
+      RoleName: "get-history-dynamodb-policy"
+      Description: "Allows Lambda functions to call AWS services on your behalf."
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "lambda.amazonaws.com"
+  IAMRole00TestAPIGATEWAY00MoKsG:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs"
+      MaxSessionDuration: 3600
+      RoleName: "Test_APIGATEWAY"
+      Description: "Allows API Gateway to push logs to CloudWatch Logs."
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "apigateway.amazonaws.com"
+          Sid: ""
+  LambdaPermission00functiongethistory00WPvaU:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunction00gethistory00mxLfy"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:ap-northeast-1:590183837479:24x9qy8wp7/*/POST/"
+      Principal: "apigateway.amazonaws.com"
+  CloudWatchAlarm00TargetTrackingtableUserProvisionedCapacityLow9c76b9bafbf243549049bcab2548a7c300FS5I6:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "LessThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00User00GDNtM"
+        Name: "TableName"
+      Period: 300
+      EvaluationPeriods: 3
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:0306b534-79c4-43d1-be4d-334dda52675e:resource/dynamodb/table/User:policyName/$User-scaling-policy:createdBy/40ae833a-427b-4189-aaa3-d69b69b8e429"
+      MetricName: "ProvisionedWriteCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:0306b534-79c4-43d1-be4d-334dda52675e:resource/dynamodb/table/User:policyName/$User-scaling-policy:createdBy/40ae833a-427b-4189-aaa3-d69b69b8e429."
+      AlarmName: "TargetTracking-table/User-ProvisionedCapacityLow-9c76b9ba-fbf2-4354-9049-bcab2548a7c3"
+      Statistic: "Average"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 1
+  CloudWatchAlarm00TargetTrackingtableUserAlarmHigh18b95a87b7c044fd9ed639f8174b236700MGSl7:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "GreaterThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00User00GDNtM"
+        Name: "TableName"
+      Period: 60
+      EvaluationPeriods: 2
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:0306b534-79c4-43d1-be4d-334dda52675e:resource/dynamodb/table/User:policyName/$User-scaling-policy:createdBy/40ae833a-427b-4189-aaa3-d69b69b8e429"
+      MetricName: "ConsumedWriteCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:0306b534-79c4-43d1-be4d-334dda52675e:resource/dynamodb/table/User:policyName/$User-scaling-policy:createdBy/40ae833a-427b-4189-aaa3-d69b69b8e429."
+      AlarmName: "TargetTracking-table/User-AlarmHigh-18b95a87-b7c0-44fd-9ed6-39f8174b2367"
+      Statistic: "Sum"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 42
+  ApiGatewayDeployment007ebqk100AkDH1:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi002jcwshocug00R8nKn"
+  LambdaPermission00functiongetrangetweets00736JP:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunction00getrangetweets001pnWG"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:ap-northeast-1:590183837479:2jcwshocug/*/POST/get-range-tweets"
+      Principal: "apigateway.amazonaws.com"
+  DynamoDBTable00Tweet00curzk:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::DynamoDB::Table"
+    DeletionPolicy: "Retain"
+    Properties:
+      SSESpecification:
+        SSEEnabled: false
+      TableName: "Tweet"
+      AttributeDefinitions:
+      - AttributeType: "S"
+        AttributeName: "geoHash"
+      - AttributeType: "S"
+        AttributeName: "uid"
+      ContributorInsightsSpecification:
+        Enabled: false
+      BillingMode: "PROVISIONED"
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: false
+      ProvisionedThroughput:
+        WriteCapacityUnits: 1
+        ReadCapacityUnits: 1
+      KeySchema:
+      - KeyType: "HASH"
+        AttributeName: "geoHash"
+      - KeyType: "RANGE"
+        AttributeName: "uid"
+      DeletionProtectionEnabled: false
+      TableClass: "STANDARD"
+      Tags: []
+      TimeToLiveSpecification:
+        Enabled: false
+  ApplicationAutoScalingScalableTarget00tableUser00nHQP4:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApplicationAutoScaling::ScalableTarget"
+    DeletionPolicy: "Retain"
+    Properties:
+      ScalableDimension: "dynamodb:table:WriteCapacityUnits"
+      SuspendedState:
+        DynamicScalingOutSuspended: false
+        ScheduledScalingSuspended: false
+        DynamicScalingInSuspended: false
+      MinCapacity: 1
+      ResourceId: "table/User"
+      ServiceNamespace: "dynamodb"
+      MaxCapacity: 10
+  DynamoDBTable00User00GDNtM:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::DynamoDB::Table"
+    DeletionPolicy: "Retain"
+    Properties:
+      SSESpecification:
+        SSEEnabled: false
+      TableName: "User"
+      AttributeDefinitions:
+      - AttributeType: "S"
+        AttributeName: "userId"
+      ContributorInsightsSpecification:
+        Enabled: false
+      BillingMode: "PROVISIONED"
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: false
+      ProvisionedThroughput:
+        WriteCapacityUnits: 1
+        ReadCapacityUnits: 1
+      KeySchema:
+      - KeyType: "HASH"
+        AttributeName: "userId"
+      DeletionProtectionEnabled: false
+      TableClass: "STANDARD"
+      Tags: []
+      TimeToLiveSpecification:
+        Enabled: false
+  CloudWatchAlarm00TargetTrackingtableUserProvisionedCapacityHigh45e93f7ae4f1431883920f5d569af13c00yZiot:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "GreaterThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00User00GDNtM"
+        Name: "TableName"
+      Period: 300
+      EvaluationPeriods: 3
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:0306b534-79c4-43d1-be4d-334dda52675e:resource/dynamodb/table/User:policyName/$User-scaling-policy:createdBy/40ae833a-427b-4189-aaa3-d69b69b8e429"
+      MetricName: "ProvisionedWriteCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:0306b534-79c4-43d1-be4d-334dda52675e:resource/dynamodb/table/User:policyName/$User-scaling-policy:createdBy/40ae833a-427b-4189-aaa3-d69b69b8e429."
+      AlarmName: "TargetTracking-table/User-ProvisionedCapacityHigh-45e93f7a-e4f1-4318-8392-0f5d569af13c"
+      Statistic: "Average"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 1
+  CloudWatchAlarm00TargetTrackingtableTweetProvisionedCapacityHighb4d26cf1e0ba456da1edb54d9aa412e400iDCAn:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "GreaterThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00Tweet00curzk"
+        Name: "TableName"
+      Period: 300
+      EvaluationPeriods: 3
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:c6c1f5c9-6670-4e71-9c42-f116193975ed:resource/dynamodb/table/Tweet:policyName/$Tweet-scaling-policy:createdBy/d85f2d29-0c2c-441c-8917-26ec1960e118"
+      MetricName: "ProvisionedWriteCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:c6c1f5c9-6670-4e71-9c42-f116193975ed:resource/dynamodb/table/Tweet:policyName/$Tweet-scaling-policy:createdBy/d85f2d29-0c2c-441c-8917-26ec1960e118."
+      AlarmName: "TargetTracking-table/Tweet-ProvisionedCapacityHigh-b4d26cf1-e0ba-456d-a1ed-b54d9aa412e4"
+      Statistic: "Average"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 1
+  IAMRole00AWSServiceRoleForAPIGateway00g8Du5:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/aws-service-role/ops.apigateway.amazonaws.com/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/aws-service-role/APIGatewayServiceRolePolicy"
+      MaxSessionDuration: 3600
+      RoleName: "AWSServiceRoleForAPIGateway"
+      Description: "The Service Linked Role is used by Amazon API Gateway."
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "ops.apigateway.amazonaws.com"
+  IAMManagedPolicy00policyPlateaudynamodbpolicy00WvdqK:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::ManagedPolicy"
+    DeletionPolicy: "Retain"
+    Properties:
+      ManagedPolicyName: "Plateau_dynamodb_policy"
+      Path: "/"
+      Description: ""
+      Groups: []
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Resource: "*"
+          Action:
+          - "dynamodb:PutItem"
+          - "dynamodb:GetItem"
+          Effect: "Allow"
+          Sid: "VisualEditor0"
+      Roles:
+      - Ref: "IAMRole00gethistorydynamodbpolicy00H59tJ"
+      Users: []
+  LambdaPermission00functiongethistory00XMeEk:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunction00gethistory00mxLfy"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:ap-northeast-1:590183837479:2jcwshocug/*/POST/get-history"
+      Principal: "apigateway.amazonaws.com"
+  CloudWatchAlarm00TargetTrackingtableTweetProvisionedCapacityLowfdc5dd2d300b42228583158890e3b37300AdRLL:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "LessThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00Tweet00curzk"
+        Name: "TableName"
+      Period: 300
+      EvaluationPeriods: 3
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:f197b585-da94-4d28-b53b-b3d6585560f7:resource/dynamodb/table/Tweet:policyName/$Tweet-scaling-policy:createdBy/f02303fd-f592-4632-8871-c75ba5ed4763"
+      MetricName: "ProvisionedReadCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:f197b585-da94-4d28-b53b-b3d6585560f7:resource/dynamodb/table/Tweet:policyName/$Tweet-scaling-policy:createdBy/f02303fd-f592-4632-8871-c75ba5ed4763."
+      AlarmName: "TargetTracking-table/Tweet-ProvisionedCapacityLow-fdc5dd2d-300b-4222-8583-158890e3b373"
+      Statistic: "Average"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 1
+  ApiGatewayDeployment00n7do0s00LhGaq:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi002jcwshocug00R8nKn"
+  ApiGatewayDeployment00624jo000jaaV2:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi002jcwshocug00R8nKn"
+  LambdaPermission00functiongetonetweet00XZHoO:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunction00getonetweet00FD9pd"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:ap-northeast-1:590183837479:2jcwshocug/*/POST/one-tweet"
+      Principal: "apigateway.amazonaws.com"
+  CloudWatchAlarm00TargetTrackingtableTweetProvisionedCapacityHighada63bf6d0354d10ac140a75d5fdaac40002r59:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "GreaterThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00Tweet00curzk"
+        Name: "TableName"
+      Period: 300
+      EvaluationPeriods: 3
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:f197b585-da94-4d28-b53b-b3d6585560f7:resource/dynamodb/table/Tweet:policyName/$Tweet-scaling-policy:createdBy/f02303fd-f592-4632-8871-c75ba5ed4763"
+      MetricName: "ProvisionedReadCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:f197b585-da94-4d28-b53b-b3d6585560f7:resource/dynamodb/table/Tweet:policyName/$Tweet-scaling-policy:createdBy/f02303fd-f592-4632-8871-c75ba5ed4763."
+      AlarmName: "TargetTracking-table/Tweet-ProvisionedCapacityHigh-ada63bf6-d035-4d10-ac14-0a75d5fdaac4"
+      Statistic: "Average"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 1
+  ApiGatewayDeployment00wtsg4k00NuqX3:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi002jcwshocug00R8nKn"
+  ApiGatewayDeployment00uwy1vp00QUQJb:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi002jcwshocug00R8nKn"
+  CloudWatchAlarm00TargetTrackingtableUserProvisionedCapacityLowaa43b2b7181243d4a745e2c45d50c28d00nRDj7:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "LessThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00User00GDNtM"
+        Name: "TableName"
+      Period: 300
+      EvaluationPeriods: 3
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:e4a9858a-e05c-4e76-b630-31fd4540e7d7:resource/dynamodb/table/User:policyName/$User-scaling-policy:createdBy/73291d91-eb2f-45ee-97d7-7c34c3ae6f40"
+      MetricName: "ProvisionedReadCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:e4a9858a-e05c-4e76-b630-31fd4540e7d7:resource/dynamodb/table/User:policyName/$User-scaling-policy:createdBy/73291d91-eb2f-45ee-97d7-7c34c3ae6f40."
+      AlarmName: "TargetTracking-table/User-ProvisionedCapacityLow-aa43b2b7-1812-43d4-a745-e2c45d50c28d"
+      Statistic: "Average"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 1
+  LambdaPermission00functiongetrangetweets00G4qMs:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunction00getrangetweets001pnWG"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:ap-northeast-1:590183837479:2jcwshocug/*/GET/get-range-tweets"
+      Principal: "apigateway.amazonaws.com"
+  CloudWatchAlarm00TargetTrackingtableTweetAlarmLowee252630ea7e46a9b4d6d2b953611c5000m2ZKU:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "LessThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00Tweet00curzk"
+        Name: "TableName"
+      Period: 60
+      EvaluationPeriods: 15
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:f197b585-da94-4d28-b53b-b3d6585560f7:resource/dynamodb/table/Tweet:policyName/$Tweet-scaling-policy:createdBy/f02303fd-f592-4632-8871-c75ba5ed4763"
+      MetricName: "ConsumedReadCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:f197b585-da94-4d28-b53b-b3d6585560f7:resource/dynamodb/table/Tweet:policyName/$Tweet-scaling-policy:createdBy/f02303fd-f592-4632-8871-c75ba5ed4763."
+      AlarmName: "TargetTracking-table/Tweet-AlarmLow-ee252630-ea7e-46a9-b4d6-d2b953611c50"
+      Statistic: "Sum"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 30
+  ApiGatewayDeployment00s3rzu900gYown:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi002jcwshocug00R8nKn"
+      Description: "????"
+  CloudWatchAlarm00TargetTrackingtableTweetAlarmHighe14ad2e98f484212a488e9bfd2dedf1800XGQ7d:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "GreaterThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00Tweet00curzk"
+        Name: "TableName"
+      Period: 60
+      EvaluationPeriods: 2
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:f197b585-da94-4d28-b53b-b3d6585560f7:resource/dynamodb/table/Tweet:policyName/$Tweet-scaling-policy:createdBy/f02303fd-f592-4632-8871-c75ba5ed4763"
+      MetricName: "ConsumedReadCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:f197b585-da94-4d28-b53b-b3d6585560f7:resource/dynamodb/table/Tweet:policyName/$Tweet-scaling-policy:createdBy/f02303fd-f592-4632-8871-c75ba5ed4763."
+      AlarmName: "TargetTracking-table/Tweet-AlarmHigh-e14ad2e9-8f48-4212-a488-e9bfd2dedf18"
+      Statistic: "Sum"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 42
+  CloudWatchAlarm00TargetTrackingtableTweetAlarmLow1018aae2119348ce9d68530a881a84ee003XAeY:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "LessThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00Tweet00curzk"
+        Name: "TableName"
+      Period: 60
+      EvaluationPeriods: 15
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:c6c1f5c9-6670-4e71-9c42-f116193975ed:resource/dynamodb/table/Tweet:policyName/$Tweet-scaling-policy:createdBy/d85f2d29-0c2c-441c-8917-26ec1960e118"
+      MetricName: "ConsumedWriteCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:c6c1f5c9-6670-4e71-9c42-f116193975ed:resource/dynamodb/table/Tweet:policyName/$Tweet-scaling-policy:createdBy/d85f2d29-0c2c-441c-8917-26ec1960e118."
+      AlarmName: "TargetTracking-table/Tweet-AlarmLow-1018aae2-1193-48ce-9d68-530a881a84ee"
+      Statistic: "Sum"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 30
+  CloudWatchAlarm00TargetTrackingtableUserAlarmLow330ccb0131734cb5bfd8c5db963bab5000oSYA3:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "LessThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00User00GDNtM"
+        Name: "TableName"
+      Period: 60
+      EvaluationPeriods: 15
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:0306b534-79c4-43d1-be4d-334dda52675e:resource/dynamodb/table/User:policyName/$User-scaling-policy:createdBy/40ae833a-427b-4189-aaa3-d69b69b8e429"
+      MetricName: "ConsumedWriteCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:0306b534-79c4-43d1-be4d-334dda52675e:resource/dynamodb/table/User:policyName/$User-scaling-policy:createdBy/40ae833a-427b-4189-aaa3-d69b69b8e429."
+      AlarmName: "TargetTracking-table/User-AlarmLow-330ccb01-3173-4cb5-bfd8-c5db963bab50"
+      Statistic: "Sum"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 30
+  CloudWatchAlarm00TargetTrackingtableUserProvisionedCapacityHigh6cfd7f51722047b59fa53a9bce97058f00ACFua:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "GreaterThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00User00GDNtM"
+        Name: "TableName"
+      Period: 300
+      EvaluationPeriods: 3
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:e4a9858a-e05c-4e76-b630-31fd4540e7d7:resource/dynamodb/table/User:policyName/$User-scaling-policy:createdBy/73291d91-eb2f-45ee-97d7-7c34c3ae6f40"
+      MetricName: "ProvisionedReadCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:e4a9858a-e05c-4e76-b630-31fd4540e7d7:resource/dynamodb/table/User:policyName/$User-scaling-policy:createdBy/73291d91-eb2f-45ee-97d7-7c34c3ae6f40."
+      AlarmName: "TargetTracking-table/User-ProvisionedCapacityHigh-6cfd7f51-7220-47b5-9fa5-3a9bce97058f"
+      Statistic: "Average"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 1
+  CloudWatchAlarm00TargetTrackingtableUserAlarmHigh6f4878efe40f45508e29e156d14fc85000xhQgM:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "GreaterThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00User00GDNtM"
+        Name: "TableName"
+      Period: 60
+      EvaluationPeriods: 2
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:e4a9858a-e05c-4e76-b630-31fd4540e7d7:resource/dynamodb/table/User:policyName/$User-scaling-policy:createdBy/73291d91-eb2f-45ee-97d7-7c34c3ae6f40"
+      MetricName: "ConsumedReadCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:e4a9858a-e05c-4e76-b630-31fd4540e7d7:resource/dynamodb/table/User:policyName/$User-scaling-policy:createdBy/73291d91-eb2f-45ee-97d7-7c34c3ae6f40."
+      AlarmName: "TargetTracking-table/User-AlarmHigh-6f4878ef-e40f-4550-8e29-e156d14fc850"
+      Statistic: "Sum"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 42
+  ApplicationAutoScalingScalableTarget00tableTweet00eB1qi:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApplicationAutoScaling::ScalableTarget"
+    DeletionPolicy: "Retain"
+    Properties:
+      ScalableDimension: "dynamodb:table:ReadCapacityUnits"
+      SuspendedState:
+        DynamicScalingOutSuspended: false
+        ScheduledScalingSuspended: false
+        DynamicScalingInSuspended: false
+      MinCapacity: 1
+      ResourceId: "table/Tweet"
+      ServiceNamespace: "dynamodb"
+      MaxCapacity: 10
+  LambdaPermission00functiongetonetweet00IK45U:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunction00getonetweet00FD9pd"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:ap-northeast-1:590183837479:2jcwshocug/*/GET/"
+      Principal: "apigateway.amazonaws.com"
+  ApiGatewayDeployment00gq1qet00uraHv:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi002jcwshocug00R8nKn"
+  CloudWatchAlarm00TargetTrackingtableUserAlarmLow54181219650940619d29a5fa0a44d02000d2Ned:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "LessThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00User00GDNtM"
+        Name: "TableName"
+      Period: 60
+      EvaluationPeriods: 15
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:e4a9858a-e05c-4e76-b630-31fd4540e7d7:resource/dynamodb/table/User:policyName/$User-scaling-policy:createdBy/73291d91-eb2f-45ee-97d7-7c34c3ae6f40"
+      MetricName: "ConsumedReadCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-northeast-1:590183837479:scalingPolicy:e4a9858a-e05c-4e76-b630-31fd4540e7d7:resource/dynamodb/table/User:policyName/$User-scaling-policy:createdBy/73291d91-eb2f-45ee-97d7-7c34c3ae6f40."
+      AlarmName: "TargetTracking-table/User-AlarmLow-54181219-6509-4061-9d29-a5fa0a44d020"
+      Statistic: "Sum"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 30
+  ApplicationAutoScalingScalableTarget00tableUser004mobV:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApplicationAutoScaling::ScalableTarget"
+    DeletionPolicy: "Retain"
+    Properties:
+      ScalableDimension: "dynamodb:table:ReadCapacityUnits"
+      SuspendedState:
+        DynamicScalingOutSuspended: false
+        ScheduledScalingSuspended: false
+        DynamicScalingInSuspended: false
+      MinCapacity: 1
+      ResourceId: "table/User"
+      ServiceNamespace: "dynamodb"
+      MaxCapacity: 10
+  ApiGatewayRestApi002jcwshocug00R8nKn:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::RestApi"
+    DeletionPolicy: "Retain"
+    Properties:
+      ApiKeySourceType: "HEADER"
+      EndpointConfiguration:
+        Types:
+        - "REGIONAL"
+      DisableExecuteApiEndpoint: false
+      Name: "PlateauGW"
+  ApplicationAutoScalingScalableTarget00tableTweet001SI4S:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApplicationAutoScaling::ScalableTarget"
+    DeletionPolicy: "Retain"
+    Properties:
+      ScalableDimension: "dynamodb:table:WriteCapacityUnits"
+      SuspendedState:
+        DynamicScalingOutSuspended: false
+        ScheduledScalingSuspended: false
+        DynamicScalingInSuspended: false
+      MinCapacity: 1
+      ResourceId: "table/Tweet"
+      ServiceNamespace: "dynamodb"
+      MaxCapacity: 10
+  LambdaPermission00functiongethistory008XC3o:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunction00gethistory00mxLfy"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:ap-northeast-1:590183837479:2jcwshocug/*/POST/"
+      Principal: "apigateway.amazonaws.com"
+  IAMRole00PlateauLambdaRole00LjV4E:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+      - "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess"
+      MaxSessionDuration: 3600
+      RoleName: "Plateau_Lambda_Role"
+      Description: "Plateau"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "lambda.amazonaws.com"
+      Tags:
+      - Value: "Plateau"
+        Key: "PJ"
+  LambdaFunction00posttweet00NeCuI:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 10
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "index.handler"
+      Code:
+        SourceKMSKeyArn:
+          Ref: "LambdaFunction00posttweet00NeCuICodeSourceKMSKeyArnwKZMt"
+        S3ObjectVersion:
+          Ref: "LambdaFunction00posttweet00NeCuICodeS3ObjectVersionJbkn0"
+        S3Bucket:
+          Ref: "LambdaFunction00posttweet00NeCuICodeS3Bucketekd8Z"
+        ZipFile:
+          Ref: "LambdaFunction00posttweet00NeCuICodeZipFile3GUPZ"
+        ImageUri:
+          Ref: "LambdaFunction00posttweet00NeCuICodeImageUri4TWkm"
+        S3Key:
+          Ref: "LambdaFunction00posttweet00NeCuICodeS3KeyR1PAy"
+      Role:
+        Fn::GetAtt:
+        - "IAMRole00PlateauLambdaRole00LjV4E"
+        - "Arn"
+      FileSystemConfigs: []
+      FunctionName: "post-tweet"
+      Runtime: "nodejs20.x"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/post-tweet"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Layers:
+      - "arn:aws:lambda:ap-northeast-1:590183837479:layer:aws-sdk:5"
+      Architectures:
+      - "x86_64"
+  LambdaPermission00functiongetonetweet008MciH:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunction00getonetweet00FD9pd"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:ap-northeast-1:590183837479:2jcwshocug/*/GET/one-tweet"
+      Principal: "apigateway.amazonaws.com"
+  LambdaFunction00gethistory00mxLfy:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "index.handler"
+      Code:
+        SourceKMSKeyArn:
+          Ref: "LambdaFunction00gethistory00mxLfyCodeSourceKMSKeyArngsywl"
+        S3ObjectVersion:
+          Ref: "LambdaFunction00gethistory00mxLfyCodeS3ObjectVersionUwo9U"
+        S3Bucket:
+          Ref: "LambdaFunction00gethistory00mxLfyCodeS3BucketZCDYc"
+        ZipFile:
+          Ref: "LambdaFunction00gethistory00mxLfyCodeZipFilerokt1"
+        ImageUri:
+          Ref: "LambdaFunction00gethistory00mxLfyCodeImageUri7f7b2"
+        S3Key:
+          Ref: "LambdaFunction00gethistory00mxLfyCodeS3KeySTABk"
+      Role:
+        Fn::GetAtt:
+        - "IAMRole00PlateauLambdaRole00LjV4E"
+        - "Arn"
+      FileSystemConfigs: []
+      FunctionName: "get-history"
+      Runtime: "nodejs20.x"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/get-history"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Layers:
+      - "arn:aws:lambda:ap-northeast-1:590183837479:layer:aws-sdk:6"
+      Architectures:
+      - "x86_64"
+  LambdaPermission00functiontestaccessdynamoDB00XVMql:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunction00testaccessdynamoDB00wVgQ0"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:ap-northeast-1:590183837479:2jcwshocug/*/GET/get-history"
+      Principal: "apigateway.amazonaws.com"
+  ApiGatewayStage00Prod001FEZ2:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Stage"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi002jcwshocug00R8nKn"
+      DeploymentId:
+        Fn::GetAtt:
+        - "ApiGatewayDeployment00gq1qet00uraHv"
+        - "DeploymentId"
+      StageName: "Prod"
+      CacheClusterSize: "0.5"
+      TracingEnabled: false
+      CacheClusterEnabled: false
+  ApiGatewayDeployment0093ob0y00iEnav:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi002jcwshocug00R8nKn"
