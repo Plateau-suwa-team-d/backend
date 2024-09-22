@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "aws-sdk": "^2.1691.0",
+    "haversine-distance": "^1.2.3",
+    "jmespath": "^0.16.0",
+    "ngeohash": "^0.6.3"
+  }
+}
