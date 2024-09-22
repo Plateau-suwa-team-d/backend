@@ -31,7 +31,7 @@ exports.handler = async (event) => {
                 uid: uid,
                 content: content,
                 comments: comments || [],
-                geohash: geohashValue,
+                geoHash: geohashValue,
                 genre: genre,
                 latitude: latitude,
                 longitude: longitude
